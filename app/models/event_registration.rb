@@ -7,7 +7,7 @@ class EventRegistration < ActiveRecord::Base
   before_validation :derive_name
   
   def derive_name
-    "#{first_name} #{last_name} Event ##{event_id}"
+    self.name = "#{first_name} #{last_name} Event ##{event_id}"
   end
 
   def event_name

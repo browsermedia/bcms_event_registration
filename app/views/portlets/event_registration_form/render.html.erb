@@ -1,0 +1,15 @@
+<h2>Register for <%=h @event.name %></h2>
+<div class="event_registration_form">
+  <% form_for @event_registration, :url => cms_handler_path(@portlet, "register") do |f| %>
+    <%= f.error_messages %>
+    <% %w[first_name last_name email number_of_attendees address1 address2 city state zip].each do |field| %>
+      <p>
+        <%= f.label field.to_sym %>
+        <%= f.text_field field.to_sym %>
+      </p>      
+    <% end %>
+    <p>
+      <%= submit_tag "Submit" %>
+    </p>
+  <% end %>
+</div

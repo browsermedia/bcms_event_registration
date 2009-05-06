@@ -1,0 +1,10 @@
+<%= f.cms_drop_down :event_id, Event.all(:order => "name").map{|e| [e.name, e.id]} %>
+<%= f.cms_text_field :first_name %>
+<%= f.cms_text_field :last_name %>
+<%= f.cms_text_field :email %>
+<%= f.cms_text_field :number_of_attendees %>
+<%= f.cms_text_field :address1 %>
+<%= f.cms_text_field :address2 %>
+<%= f.cms_text_field :city %>
+<%= f.cms_text_field :state %>
+<%= f.cms_text_field :zip %>

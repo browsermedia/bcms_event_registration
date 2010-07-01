@@ -1,4 +1,34 @@
-BrowserCMS Event Module
-=======================
+# Event Registration Module for BrowserCMS
 
-More to come...
+An Event Registration Module for BrowserCMS. Adds to bcms_event allow users to register for free events via webforms. 
+
+## Features
+
+* Event Registration Form - Allows users to register for a specific Event by providing a standard registration form.
+* Registration Database - Tracks individual user registrations as content blocks in the CMS which staff can search and sort.
+* Customizable Views - Event Forms can be styled using editable Portlet views.
+
+## Installation
+
+The Event module installs like other BrowserCMS modules.
+
+    gem install bcms_event_registration
+
+See http://guides.browsercms.org/installing_modules.html for further details.
+
+## Event Registration Details
+
+This module includes a new Event Registration Content Type which represents a registered attendee, with the following fields:
+
+* First Name
+* Last Name
+* Email
+* Number of Attendees (i.e. for tracking guests)
+* Address 1
+* Address 2
+* City
+* State
+* Zip
+* Event
+
+
